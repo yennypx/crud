@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1f1f1f;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 i, h2 i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.users-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.users-form h1 {
+    font-size: 2rem;
+}
+
+.users-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.users-form form input[type=text],
+.users-form form input[type=password],
+.users-form form input[type=email] {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.users-form form input[type=text]:focus,
+.users-form form input[type=password]:focus,
+.users-form form input[type=email]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-add {
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.users-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.users-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-table table th,
+.users-table table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.users-table table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.users-table table td {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .users-form form {
+        width: 100%;
+    }
+
+    .users-form {
+        padding: 20px;
+    }
+
+    .users-table table th, .users-table table td {
+        font-size: 0.9rem;
+    }
+}
+
+
+
